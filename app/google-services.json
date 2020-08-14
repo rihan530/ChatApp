@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "449424263899",
+    "firebase_url": "https://chatapp-6c29d.firebaseio.com",
+    "project_id": "chatapp-6c29d",
+    "storage_bucket": "chatapp-6c29d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:449424263899:android:bd04ddf43168fde2cf5afe",
+        "android_client_info": {
+          "package_name": "com.coolwhite.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "449424263899-5co1lms4r5lus9cucirbukemotqeanpq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBU2CStFJTe4ZuX4n6SW4uUWeAztk20QFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "449424263899-5co1lms4r5lus9cucirbukemotqeanpq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
