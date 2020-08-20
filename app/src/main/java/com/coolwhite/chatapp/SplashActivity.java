@@ -39,21 +39,32 @@ public class SplashActivity  extends AppCompatActivity {
         mFirebaseRemoteConfig.setConfigSettingsAsync(configSettings);
         mFirebaseRemoteConfig.setDefaultsAsync(R.xml.default_config);
 
-        mFirebaseRemoteConfig.fetchAndActivate()
-                .addOnCompleteListener(this, new OnCompleteListener<Boolean>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Boolean> task) {
-                        if (task.isSuccessful()) {
-                            boolean updated = task.getResult();
+//        mFirebaseRemoteConfig.fetchAndActivate()
+//                .addOnCompleteListener(this, new OnCompleteListener<Boolean>() {
+//                    @Override
+//                    public void onComplete(@NonNull Task<Boolean> task) {
+//                        if (task.isSuccessful()) {
+//                            boolean updated = task.getResult();
+//
+//                            mFirebaseRemoteConfig.fetchAndActivate();
+//                        } else {
+//
+//
+//                        }
+//                        displayMessage();
+//                    }
+//                });
+        mFirebaseRemoteConfig.fetch(0).addOnCompleteListener(this, new OnCompleteListener<Void>() {
+            @Override
+            public void onComplete(@NonNull Task<Void> task) {
+                if (task.isSuccessful()) {
+                    mFirebaseRemoteConfig.activateFetched();
+                } else {
 
-                            mFirebaseRemoteConfig.fetchAndActivate();
-                        } else {
-
-
-                        }
-                        displayMessage();
-                    }
-                });
+                }
+                displayMessage();
+            }
+        });
 
     }
     void displayMessage() {
