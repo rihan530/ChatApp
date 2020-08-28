@@ -5,6 +5,13 @@
     android:orientation="vertical"
     android:gravity="center">
 
+    <ImageView
+        android:id="@+id/signupActivity_imageview_profile"
+        android:src="@drawable/ic_add_to_photos_24"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="50dp"/>
+
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -37,7 +44,8 @@
             android:id="@+id/signupActivity_edittext_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="패스워드" />
+            android:hint="패스워드"
+            android:inputType="textPassword"/>
 
     </com.google.android.material.textfield.TextInputLayout>
 
